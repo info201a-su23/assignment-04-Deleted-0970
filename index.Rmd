@@ -5,29 +5,130 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+An introduction of the problem domain and a description of the variable(s) 
+you are choosing to analyze (and why!)
+
+***
+
+Maintaining a just and fair criminal legal system is a pillar of the 
+United States' values. As such, it is important to perform routine checkups on 
+the fairness of the US criminal legal system, namely its racial incarceration 
+rates. Incarceration is a multifaceted issue that significantly impacts 
+individuals, families, and communities. By using the Vera Institute of Justice's 
+Incarceration Trends data set, we can gain invaluable insights into potential 
+disparities, avenues for reform, and the current state of the US criminal legal 
+system at both county and state levels. 
+
+Some variables worth considering that can be calculated from this data set 
+include:
+
+* Average jail rate of different racial groups (Black, LatinX, White, &  
+Native American)
+
+* Average prison rate of different racial groups (Black, LatinX, White, & 
+Native American)
+
+* How the jail rate compares to the prison for each racial group
+
+* Which state has the highest jail rate of different racial groups (Black, 
+LatinX, White, & Native American)
+
+* Which state has the highest prison rate of different racial groups (Black, 
+Latinx, White, & Native American)
+
+* Which state has the largest difference of jail rates between the Latinx and 
+White racial groups?
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Write a summary paragraph of findings that includes the 5 values calculated 
+from your summary information R script
 
-These will likely be calculated using your DPLYR skills, answering questions such as: 
+These will likely be calculated using your DPLYR skills, answering questions 
+such as:
 
-- What is the average value of my variable across all the counties (in the current year)?
+- What is the average value of my variable across all the counties (in the 
+current year)?
 - Where is my variable the highest / lowest?
 - How much has my variable change over the last N years?
 
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+Feel free to calculate and report values that you find relevant. Again, remember 
+that the purpose is to think about how these measure of incarceration vary 
+by race.
+
+***
+
+
 
 ### The Dataset
 
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+Who collected the data?
+
+* The data was collected/gathered by the Vera Institute of Justice, a national
+research and policy organization based in the United States that works on 
+transforming the criminal legal and immigration systems until they're fair for
+all. 
+
+How was the data collected or generated?
+
+* The data was collected by gathering data from a multitude of other data sets. 
+The Vera Institute uses data from the Bureau of Justice Statistics (BJS), 
+the Census of Jails (COJ), the Annual Survey of Jails (ASJ), 
+the Deaths in Custody Reporting Program (DCRP) and the National Corrections 
+Reporting Program (NCRP) to create their Incarceration Trends data set.
+
+Why was the data collected?
+
+* The data was collected because it was the first national data set that 
+can examined both jail and prison incarceration at the county level. Having a 
+data set at this level of granularity is important because incarceration is 
+usually decided by county officials, judges, wardens, and prosecutors. We can 
+therefore use this data to see how decisions are made in communities across 
+the U.S.
+
+How many observations (rows) are in your data?
+
+* There are 91031 observations (rows) in the data set.
+
+How many features (columns) are in the data?
+
+* There are 23 features (columns) in the data set.
+
+What, if any, ethical questions or questions of power do you need to consider 
+when working with this data?  
+
+* As mentioned in *Data Feminism* by Catherine D'Ignazio and Lauren F. Klein, 
+it is important reflect on the data we are working with. In terms of questions
+of power and ethical questions, we must first understand that we are strangers
+to the data set and it extremely difficult to know the origin, context, and 
+lived experiences of each individual represented by the data. We must also 
+understand that most of the data gathered come from national organizations with
+positions of power. This means that it is likely that some perspectives are
+not included within the data set. 
+
 What are possible limitations or problems with this data?   (at least 200 words)
+
+* 
+While evaluating the fairness of the U.S. criminal justice system, it is 
+important to recognize that this data set only uses race and gender as 
+measurements. This selective approach can create a framing cognitive bias and 
+is not a holistic representation of the complex U.S. criminal justice system. 
+The assignment further restricts the dimensions of evaluation by focusing on 
+only comparing racial incarceration rates. While this information provides 
+valuable insights, it fails to consider other important aspects of the criminal 
+justice system such as recidivism rates and experiences while incarcerated. 
+Limiting the analysis to racial incarceration also overlooks other crucial 
+factors, such as socioeconomic status, education, systemic policies, and 
+culture/family which can also influence arrests and sentencing.
+The dataset also doesn’t represent all racial groups as they exclude Asians, 
+Native Hawaiians, and other Pacific Islanders. This means that the results 
+from our data set cannot be generalized to “all racial groups.”
+Furthermore, it fails to mention how people who belong to multiple races are 
+represented. The lack of this information obscures the 
+experiences of multiracial individuals within the criminal justice system. 
+Finally, multiple N/A values which represent missing information within the 
+dataset introduces uncertainty into the calculated values, potentially leading 
+to skewed or incomplete assessments of counties and states. (209 words)
 
 
 ### Trends Over Time Chart
