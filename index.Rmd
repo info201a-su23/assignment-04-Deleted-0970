@@ -1,5 +1,5 @@
 ---
-title: "A3: Incarceration"
+title: 'A3: Incarceration'
 output: html_document
 ---
 
@@ -22,24 +22,28 @@ system at both county and state levels.
 Some variables worth considering that can be calculated from this data set 
 include:
 
-* Average jail rate of different racial groups (Black, LatinX, White, &  
-Native American)
+* Average jail rate of different racial groups (LatinX & White)
 
-* Average prison rate of different racial groups (Black, LatinX, White, & 
-Native American)
+* How has the jail rate changed in the past decade in Washington state for the
+LatinX community? 
 
-* How the jail rate compares to the prison for each racial group
+* How has the jail rate changed in the past decade in Washington state for the
+White community?
 
-* Which state has the highest jail rate of different racial groups (Black, 
-LatinX, White, & Native American)
+* Which state has the greatest difference of jail rates between the Latinx and 
+White racial groups?
 
-* Which state has the highest prison rate of different racial groups (Black, 
-Latinx, White, & Native American)
-
-* Which state has the largest difference of jail rates between the Latinx and 
+* Which year had the greatest difference in jail rates between the Latinx and
 White racial groups?
 
 ### Summary Information
+
+```{r}
+# Load results from summary.R
+# change to include = FALSE when turning in
+source("summary.R")
+
+```
 
 Write a summary paragraph of findings that includes the 5 values calculated 
 from your summary information R script
@@ -57,6 +61,15 @@ that the purpose is to think about how these measure of incarceration vary
 by race.
 
 ***
+Given that the LatinX community and the White community has the largest 
+population within the United States we will examine the difference in 
+incarceration rates between these two groups.
+![2010 US Census Ethnic and Racial Demographics](USCensus.png)
+Using data from the Vera Institute of Justice's Incarceration trends within
+the United States data set, we can see a noticeable difference between 
+these two communities with the LatinX community experiencing an average of 
+`r avg_latinx_jail` people jailed per 100,000 while the White community 
+experiences an average of `r avg_white_jail` people jailed per 100,000. 
 
 
 
@@ -148,7 +161,7 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
+``````
 
 ### Variable Comparison Chart
 
