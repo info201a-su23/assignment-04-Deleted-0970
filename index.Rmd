@@ -22,18 +22,17 @@ system at both county and state levels.
 Some variables worth considering that can be calculated from this data set 
 include:
 
-* Average jail rate of different racial groups (LatinX & White)
+* What is the average jail rate of the LatinX population?
 
-* How has the jail rate changed in the past decade in Washington state for the
+* What is the average jail rate of the White population?
+
+* How has the jail rate changed in the past decade in the US for the
 LatinX community? 
 
-* How has the jail rate changed in the past decade in Washington state for the
+* How has the jail rate changed in the past decade in the US for the
 White community?
 
 * Which state has the greatest difference of jail rates between the Latinx and 
-White racial groups?
-
-* Which year had the greatest difference in jail rates between the Latinx and
 White racial groups?
 
 ### Summary Information
@@ -60,16 +59,32 @@ Feel free to calculate and report values that you find relevant. Again, remember
 that the purpose is to think about how these measure of incarceration vary 
 by race.
 
+
 ***
-Given that the LatinX community and the White community has the largest 
-population within the United States we will examine the difference in 
-incarceration rates between these two groups.
+Using data from the Vera Institute of Justice's Incarceration Trends within 
+the United States dataset, we compared the incarceration rates between the 
+LatinX and White communities, which are the two largest populations within 
+the country. 
 ![2010 US Census Ethnic and Racial Demographics](USCensus.png)
-Using data from the Vera Institute of Justice's Incarceration trends within
-the United States data set, we can see a noticeable difference between 
-these two communities with the LatinX community experiencing an average of 
-`r avg_latinx_jail` people jailed per 100,000 while the White community 
-experiences an average of `r avg_white_jail` people jailed per 100,000. 
+
+The analysis revealed a significant disparity between these two communities. 
+average, the LatinX community experienced a higher **incarceration rate of 
+`r avg_latinx_jail` people jailed per 100,000**, while the White community's 
+**average was lower at `r avg_white_jail` people jailed per 100,000**.
+
+Moreover, when comparing the two groups, the data shows that 
+**`r avg_wl_jail_diff` more LatinX individuals are incarcerated per 100,000 
+residents** in the US compared to their White counterparts.
+
+Over time, the incarceration rates for both communities displayed distinct 
+trends. The average number of people jailed per 100,000 **decreased by 
+`r avg_latinx_jail_diff * -1`** for the LatinX community. In contrast, 
+the average incarceration rate for the White community **increased by 
+`r avg_white_jail_diff`**, reflecting a rise in comparison to the past.
+
+These findings highlight the disparities in the US criminal justice system, 
+emphasizing the need for further examination and efforts to address the 
+inequities faced by the LatinX community in particular.
 
 
 
