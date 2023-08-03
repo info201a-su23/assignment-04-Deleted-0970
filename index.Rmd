@@ -187,6 +187,15 @@ Here's an example of how to run an R script inside an RMarkdown file:
 # inserts first chart from char1_example.R
 ```
 
+* This scatter plot is included to help visualize the trends of incarceration 
+rates between the LatinX community and the rest of the United States. It 
+highlights a decline in the LatinX jail rate per 100,000 residents, contrasted 
+with a steady increase in incarceration rates for the rest of the United States. 
+However, it's essential to also notice that the LatinX jail rate remains 
+significantly higher than both the US and White averages. By presenting these 
+trends visually, we can gain a better perspective on the disparities and 
+changes in incarceration rates among different racial groups in the country.
+
 ### Variable Comparison Chart
 
 Include a chart. Make sure to describe why you included the chart, and what 
@@ -210,6 +219,18 @@ your different color and a clear legend title
 
 ```
 
+* This scatter plot is included to help visualize the trends of incarceration 
+rates between the LatinX community and the rest of the United States in 
+urban areas. This is an important statistic to look at since the [Joint
+Economic Committee](https://www.jec.senate.gov/public/_cache/files/f16b51b0-5f61-43a6-9428-8835d0ad6a7c/economic-state-of-the-latino-community-in-america-final-errata-10-15-2019.pdf). states that over 90% of the Latino community in America resides in metropolitan
+areas. By visualizing the trends of incarceration within urban areas we can 
+see that the LatinX jail rate per 100,000 people in urban areas is consistently 
+lower than the US jail rate per 100,000 people in urban areas.
+It also highlights a decline in the LatinX jail rate per 100,000 residents, 
+along with the rest of the United States This insight can help policymakers
+better understand the dynamics of incarceration rates in urban areas and 
+potentially identify areas for improvement in the criminal justice system.
+
 
 ### Map
 
@@ -231,4 +252,15 @@ guide your design:
 ```{r, echo = FALSE, code =  readLines("map_example.R")}
 # inserts third chart from map_example.R
 ```
+
+* The choropleth map presents a visual representation of the average LatinX jail
+rate per 100,000 residents by state in the United States. 
+From the map, we observe that the West and East coastal regions generally having 
+lower LatinX jail rates, with rates around 1000 per 100,000 residents. 
+Conversely, the Midwestern states show higher LatinX jail rates, with rates at
+around 2000 per 100,000 residents.Utah stands out with the highest LatinX 
+jail rate among all the states, surpassing 3000 per 100,000 residents. 
+The choropleth map allows for a clear visualization of these regional 
+disparities, helping policymakers gain insights into the concentration and 
+distribution of LatinX incarceration rates across the United States.
 
