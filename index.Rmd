@@ -37,9 +37,8 @@ White racial groups?
 
 ### Summary Information
 
-```{r}
+```{r, echo = FALSE, include = FALSE}
 # Load results from summary.R
-# change to include = FALSE when turning in
 source("summary.R")
 
 ```
@@ -59,8 +58,8 @@ Feel free to calculate and report values that you find relevant. Again, remember
 that the purpose is to think about how these measure of incarceration vary 
 by race.
 
-
 ***
+
 Using data from the Vera Institute of Justice's Incarceration Trends within 
 the United States dataset, we compared the incarceration rates between the 
 LatinX and White communities, which are the two largest populations within 
@@ -161,40 +160,75 @@ to skewed or incomplete assessments of counties and states. (209 words)
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+Include a chart. Make sure to describe why you included the chart, and what 
+patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The first chart that you will create and include will show the trend over 
+time of your variable/topic. Think carefully about what you want to communicate 
+to your user (you may have to find relevant trends in the dataset first!). 
+Here are some requirements to help guide your design:
 
 - Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
+  - This may mean showing the same measure for different locations or different 
+  racial groups. Think carefully about a meaningful comparison of locations 
+  (e.g., the top 10 counties in a state, top 10 states, etc.)
 - You must have clear x and y axis labels
 - The chart needs a clear title 
 - You need a legend for your different line colors and a clear legend title
 
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
+When we say "clear" or "human readable" titles and labels, that means that you 
+should not just display the variable name.
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-``````
+***
+
+```{r, echo = FALSE, code = readLines("chart1_example.R"), fig.width = 12}
+# inserts first chart from char1_example.R
+```
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+Include a chart. Make sure to describe why you included the chart, and what 
+patterns emerged
 
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The second chart that you will create and include will show how two different 
+(continuous) variables are related to one another. Again, think carefully about 
+what such a comparison means and what you want to communicate to your user 
+(you may have to find relevant trends in the dataset first!). Here are some 
+requirements to help guide your design:
 
 - You must have clear x and y axis labels
 - The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+- If you choose to add a color encoding (not required), you need a legend for 
+your different color and a clear legend title
+
+***
+
+```{r, echo = FALSE, code = readLines("chart2_example.R"), fig.width = 12}
+# inserts second chart from char2_example.R
+
+```
+
 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+Include a chart. Make sure to describe why you included the chart, and what 
+patterns emerged
 
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The last chart that you will create and include will show how a variable is 
+distributed geographically. Again, think carefully about what such a comparison 
+means and what you want to communicate to your user (you may have to find 
+relevant trends in the dataset first!). Here are some requirements to help 
+guide your design:
 
 - Your map needs a title
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
+
+***
+
+```{r, echo = FALSE, code =  readLines("map_example.R")}
+# inserts third chart from map_example.R
+```
 
