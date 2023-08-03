@@ -3,6 +3,8 @@ title: 'A3: Incarceration'
 output: html_document
 ---
 
+#### By: Derek Liu
+
 ### Introduction
 
 An introduction of the problem domain and a description of the variable(s) 
